@@ -32,6 +32,8 @@ body{
 
 .mainWrapper{
     width: 100%;
+    background-color: var(--bg-color);
+
 }
 
 .landscapeSection{
@@ -56,7 +58,7 @@ body{
     bottom: -80px;
 }
 
-.landscapeSection .reserveOfferContainer .title{
+.titleOfSections{
     text-align: center;
     background: var(--grid);
     -webkit-background-clip: text;
@@ -115,4 +117,18 @@ body{
     margin: auto;
     height: 50px;
     margin-top: 1rem;
+}
+
+.vilasSection{
+    background-color: var(--bg-color);
+    padding-top: 150px;
+    width: 80%;
+    margin: auto;
+}
+
+.vilasSection .desc{
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 1.3rem;
+    line-height: 24px;
 }
