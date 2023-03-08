@@ -1,0 +1,118 @@
+
+:root {
+    --bg-color: #000;
+    --font-color:#fff;
+    --yellow: #d1ab67;
+    --grid: linear-gradient(135deg, rgba(238,198,95,1) 0%, rgba(167,111,42,1) 12%, rgba(226,184,85,1) 26%, rgba(249,242,183,1) 43%, rgba(226,184,85,1) 61%, rgba(143,94,33,1) 80%, rgba(226,184,85,1) 100%);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    color: var(--font-color) ;
+    /* background-color: var(--bg-color); */
+    direction: rtl;
+}
+
+
+.navbarWapper{
+    background-color: var(--bg-color);
+    padding-block: 2.3rem;
+    padding-inline: 6.5rem;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.mainWrapper{
+    width: 100%;
+}
+
+.landscapeSection{
+    width: 100%;
+    height: 880px;
+    position: relative;
+    background-image: url('images/diskLandScape.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.landscapeSection .reserveOfferContainer{
+    width: 80%;
+    position: absolute;
+    border:1px solid var(--yellow);
+    padding:2.5rem;
+    background-color: var(--bg-color);
+    right: 50%;
+    transform: translateX(50%);
+    bottom: -80px;
+}
+
+.landscapeSection .reserveOfferContainer .title{
+    text-align: center;
+    background: var(--grid);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 2.188rem;
+    line-height: 48px;
+}
+.landscapeSection .reserveOfferContainer .desc{
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 1.125rem;
+}
+
+.landscapeSection .formWapper{
+    background-color: rgba(0,0,0,0.8);
+    padding: 30px;
+    width: fit-content;
+    margin-top: 4rem;
+    margin-inline-start: 8rem;
+    position: absolute;
+}
+
+.landscapeSection .formWapper *{
+    background-color: transparent;
+
+}
+
+.landscapeSection .formWapper .contactForm .inputsWrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.landscapeSection .formWapper .contactForm .inputsWrapper .contactInput{
+    width: 20.625rem;
+    padding: 8px 10px;
+    margin-bottom: 1.3rem;
+    border: 1px solid #fff;
+}
+.formWapper .contactForm .inputsWrapper .contactInput::placeholder{
+    color: #fff;
+}
+.landscapeSection .formWapper .contactForm .formHeader{
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 28px;
+}
+
+.formWapper .contactForm .inputsWrapper .submitBtn{
+    width: 50%;
+    border: 1px solid var(--yellow);
+    color: var(--yellow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 50px;
+    margin-top: 1rem;
+}
