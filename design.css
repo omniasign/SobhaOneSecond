@@ -33,7 +33,6 @@ body{
 .mainWrapper{
     width: 100%;
     background-color: var(--bg-color);
-
 }
 
 .landscapeSection{
@@ -124,6 +123,7 @@ body{
     padding-top: 150px;
     width: 80%;
     margin: auto;
+    margin-bottom: 100px;
 }
 
 .vilasSection .desc{
@@ -131,4 +131,65 @@ body{
     font-size: 1rem;
     margin-top: 1.3rem;
     line-height: 24px;
+}
+
+.allProperties{
+    background-color: #181818;
+    padding: 40px;
+    width: 80%;
+    margin: auto; 
+}
+
+.allProperties .propImg{
+    width: 44%;
+    height: 550px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.allProperties .propDetails{
+    flex-grow: 1;
+    /*border: 1px solid #fff;*/
+    margin-inline-start: 40px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.allProperties .propDetails .titleContainer{
+    border-inline-start: 4px solid var(--yellow);
+    padding-inline: 16px;
+    margin-bottom: 20px;
+}
+.allProperties .propDetails .titleContainer .title ,.allProperties .propDetails .titleContainer .desc{
+    background: linear-gradient(135deg, rgba(238,198,95,1) 0%, rgba(167,111,42,1) 12%, rgba(226,184,85,1) 26%, rgba(249,242,183,1) 43%, rgba(226,184,85,1) 61%, rgba(143,94,33,1) 80%, rgba(226,184,85,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eec65f', endColorstr='#e2b855', GradientType=1 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.allProperties .propDetails .titleContainer .title {
+    font-size: 35px;
+    line-height: 50px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.allProperties .propDetails .titleContainer .desc{
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.allProperties .propDetails .data{
+    margin-inline-start: 20px;
+}
+.allProperties .propDetails .data .location{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.allProperties .propDetails .data .location p{
+    font-size: 12px;
+    margin-bottom: 0;
+    margin-inline-start: 8px;
 }
